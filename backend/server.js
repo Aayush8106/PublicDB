@@ -9,7 +9,7 @@ const app=express();
 const PORT=process.env.PORT || 3000;
 
 //making frontend visible
-app.use(express.static(path.resolve("../frontend")));
+app.use(express.static(path.resolve("frontend")));
 app.use(express.json());//to parse json data
 app.use(express.urlencoded({extended:true}));//parsing data recivied from uzer
 
@@ -38,7 +38,7 @@ createTable();//creating table and also starting server
 
 //routes
 app.get("/",(req,res)=>{
-  res.sendFile(path.resolve("../frontend/home.html"));
+  res.sendFile(path.resolve("frontend/home.html"));
 });
 
 //adding data in databsase
