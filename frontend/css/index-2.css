@@ -1,0 +1,24 @@
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #171212 !important;
+}
+
+.flipped{
+    transform: rotateX(180deg);
+}
+
+ #card{cursor: pointer;}
+
+@media (max-width: 768px) {
+  #card{margin-top: -26%;}
+  
+
+}
+
+/*For Tablet*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+}
