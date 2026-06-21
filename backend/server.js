@@ -42,7 +42,7 @@ app.get("/",(req,res)=>{
 });
 
 //adding data in databsase
-app.post("/add",async(req,res)=>{
+app.post("/add.html",async(req,res)=>{
     try{
 
         const {uid,name,title,textarea}=req.body;
